@@ -1,22 +1,4 @@
-from typing import Optional
-from pydantic import BaseModel
 from pymongo import MongoClient
-
-
-"-----pydantic-----"
-
-
-class User(BaseModel):
-    firstName: str
-    lastName: str
-    email: str
-    password: str
-
-
-class UserSafe(BaseModel):
-    firstName: str
-    lastName: str
-    email: str
 
 
 "----mongo----"
